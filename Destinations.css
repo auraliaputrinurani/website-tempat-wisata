@@ -1,0 +1,87 @@
+body {
+    background-color: #171f24; /* Latar belakang hitam */
+    color: #ffffff; /* Teks putih untuk kontras */
+    padding: 20px;
+    margin: 0; /* Hilangkan margin default di seluruh body */
+    font-family: Arial, sans-serif; /* Tambahkan font default */
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffeb3b;
+}
+.navbar-brand :hover {
+    color: #ffeb3b !important;
+}
+.nav-link {
+    color: #f8c471 !important;
+}
+
+.nav-link:hover {
+    color: #ffeb3b !important;
+}
+
+/* Section Header */
+h2 {
+    color: #ffeb3b;
+    font-weight: 700;
+}
+.custom-margin-top {
+    margin-top: 50px; /* Anda bisa menyesuaikan nilai ini sesuai kebutuhan */
+}
+
+.card-scroll {
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    white-space: nowrap; /* Menyimpan kartu dalam satu baris */
+}
+
+.container {
+    margin-left: 0 !important; /* Pastikan tidak ada margin di sebelah kiri */
+    margin-right: auto; /* Hanya atur margin kanan jika diperlukan */
+    padding-left: 0; /* Hilangkan padding di sebelah kiri */
+    padding-right: 15px; /* Padding kanan tetap ada jika ingin */
+}
+
+
+/* Mengatur tata letak dan jarak antar kartu pada container */
+.card-container {
+    display: inline-flex;
+    flex-wrap: nowrap; /* Mencegah card untuk berpindah ke baris berikutnya */
+    gap: 20px; /* Memberikan jarak antar card */
+    justify-content: space-around; /* Menyebar card secara merata */
+    margin: 20px 0;
+}
+
+/* Menyesuaikan ukuran gambar pada setiap card */
+.card img {
+    height: 200px; /* Tinggi tetap untuk gambar */
+    width: 100%; /* Gambar akan menyesuaikan dengan lebar card */
+    object-fit: cover; /* Gambar akan proporsional dan menyesuaikan ukuran container */
+}
+
+/* Tambahkan padding pada setiap card untuk tata letak yang lebih baik */
+.card {
+    padding: 10px;
+    background-color: #dde2e6; /* Warna latar belakang card lebih gelap agar berbeda dengan body */
+    border-radius: 10px; /* Memberikan sedikit lengkungan pada sudut card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk card */
+    display: flex; /* Menggunakan Flexbox untuk pengaturan yang lebih baik */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    height: 500px; /* Memastikan kartu menggunakan tinggi penuh dari kontainer */
+}
+
+
+/* Mengatur tampilan elemen lokasi dan jam buka agar sesuai dengan warna card */
+.card .list-group-item {
+    background-color: #dde2e6; /* Warna latar belakang sama dengan card */
+    border: none; /* Menghilangkan garis batas default */
+    color: #000000; /* Teks berwarna hitam untuk kontras */
+}
+
+/* Hover effect untuk list item */
+.card .list-group-item:hover {
+    background-color: #c0c5c9; /* Warna sedikit lebih gelap saat di-hover */
+}
+

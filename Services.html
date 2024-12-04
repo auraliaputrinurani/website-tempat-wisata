@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Jelajahi Sulawesi Selatan</title>
+    <style>
+      body {
+          background-color: #171f24;
+          color: #030303;
+          padding: 20px;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+          background-color: #222;
+      }
+
+      .navbar-brand {
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: #ffeb3b;
+      }
+
+      .nav-link {
+          color: #f8c471 !important;
+      }
+
+      .nav-link:hover {
+          color: #f8e003 !important;
+      }
+
+      /* Section Header */
+      h2 {
+          color: #ffeb3b;
+          font-weight: 700;
+      }
+
+      /* Card Styling */
+      .card {
+          background-color: #1e2a33;
+          color: #ffffff;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      .card-title {
+          color: #f1b85d;
+          font-weight: 700;
+      }
+
+      /* Tombol Styling */
+      .btn-primary {
+          background-color: #f8c471;
+          border: none;
+          font-weight: 600;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          border-radius: 30px;
+          padding: 10px 20px;
+          font-size: 1rem;
+      }
+
+      /* Efek hover pada tombol */
+      .btn-primary:hover {
+          background-color: #ffeb3b;
+          color: #000;
+          transform: translateY(-5px);
+          box-shadow: 0 5px 15px rgba(255, 235, 59, 0.5);
+      }
+
+      /* Efek focus */
+      .btn-primary:focus {
+          outline: none;
+          box-shadow: 0 0 10px rgba(247, 221, 22, 0.8);
+      }
+
+      /* Section Spacing */
+      section {
+          margin-bottom: 50px;
+      }
+
+      /* Global Animations */
+      .fade-in {
+          opacity: 0;
+          animation: fadeIn 1s forwards;
+      }
+
+      @keyframes fadeIn {
+          0% {
+              opacity: 0;
+              transform: translateY(20px);
+          }
+          100% {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Jelajahi Sulawesi Selatan</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="Home.html" class="nav-link">Beranda</a></li>
+              <li class="nav-item"><a href="Destinations.html" class="nav-link">Destinasi</a></li>
+              <li class="nav-item"><a href="Services.html" class="nav-link active" aria-current="page">Layanan</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container my-5 fade-in">
+      <h2 class="text-center mb-4">Layanan</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Paket Wisata</h5>
+                      <p class="card-text">Nikmati berbagai paket wisata menarik yang kami tawarkan untuk pengalaman tak terlupakan di Sulawesi Selatan.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Lihat Detail</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Penyewaan Kendaraan</h5>
+                      <p class="card-text">Sewa mobil atau motor dengan harga terjangkau untuk menjelajahi destinasi wisata dengan nyaman.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Lihat Detail</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Pemandu Wisata</h5>
+                      <p class="card-text">Dapatkan pengalaman wisata yang lebih mendalam dengan pemandu lokal kami yang berpengalaman.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Lihat Detail</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mt-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Layanan Pemesanan Tiket</h5>
+                      <p class="card-text">Bantuan pemesanan tiket untuk atraksi wisata, transportasi, dan akomodasi.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Lihat Detail</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mt-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Informasi Wisata</h5>
+                      <p class="card-text">Dapatkan informasi lengkap tentang tempat-tempat menarik dan budaya lokal.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Lihat Detail</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+   <!-- Modal Bootstrap -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Detail Layanan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalContent">
+          Informasi lebih lanjut tentang layanan ini akan segera tersedia.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- JavaScript untuk mengatur konten modal -->
+<script>
+    function setModalContent(title, content) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalContent').innerHTML = content;
+    }
+  
+    document.querySelectorAll('.btn-primary').forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        let title, content;
+  
+        switch (index) {
+          case 0:
+            title = 'Paket Wisata';
+            content = '<p>Nikmati berbagai paket wisata menarik yang kami tawarkan:</p>' +
+              '<ul>' +
+              '<li><a href="#" id="paketSehari"><button type="button">Paket Wisata Sehari Penuh</button></a></li><br>' +
+              '<li><a href="#" id="paketKeluarga"><button type="button">Paket Wisata Keluarga</button></a></li><br>' +
+              '<li><a href="#" id="paketBudaya"><button type="button">Paket Wisata Khusus Budaya</button></a></li><br>' +
+              '</ul>';
+            break;
+  
+          case 1:
+            title = 'Penyewaan Kendaraan';
+            content = '<p>Sewa kendaraan yang tersedia meliputi mobil dan motor:</p>' +
+              '<ul>' +
+              '<li><b>Harga:</b> Mulai dari Rp 300.000/hari</li>' +
+              '<li><b>Lokasi:</b> Jl. Jend. Sudirman No.123, Makassar</li>' +
+              '</ul>';
+            break;
+  
+          case 2:
+            title = 'Pemandu Wisata';
+            content = '<h5>Pemandu Wisata</h5>' +
+                      '<p>Layanan pemandu wisata berpengalaman untuk berbagai destinasi:</p>' +
+                      '<ul>' +
+                      '<li><b>Harga:</b> Rp 250.000/hari</li>' +
+                      '<li><b>Bahasa:</b> Indonesia, Inggris</li>' +
+                      '<li><b>Lokasi:</b> Sulawesi Selatan</li>' +
+                      '</ul>' +
+                      '<h6>Paket Pemanduan:</h6>' +
+                      '<ul>' +
+                      '<li><b>Tur Sehari:</b> Kunjungi tempat-tempat wisata utama dalam satu hari.</li>' +
+                      '<li><b>Tur Tematik:</b> Fokus pada tema tertentu seperti kuliner atau budaya lokal.</li>' +
+                      '<li><b>Tur Keluarga:</b> Paket khusus yang dirancang untuk kegiatan keluarga.</li>' +
+                      '</ul>';
+            break;
+  
+          case 3:
+            title = 'Layanan Pemesanan Tiket';
+            content = '<h5>Layanan Pemesanan Tiket</h5>' +
+                      '<p>Kami menyediakan layanan pemesanan tiket yang memudahkan Anda dalam merencanakan perjalanan. Dapatkan tiket untuk transportasi seperti pesawat, kereta, bus, dan juga atraksi wisata populer di berbagai lokasi.</p>' +
+                      '<p><b>Jenis Tiket yang Tersedia:</b></p>' +
+                      '<ul>' +
+                      '<li>Tiket pesawat domestik dan internasional</li>' +
+                      '<li>Tiket kereta api</li>' +
+                      '<li>Tiket bus antar kota</li>' +
+                      '<li>Tiket masuk ke tempat wisata, taman hiburan, dan acara khusus</li>' +
+                      '</ul>' +
+                      '<p><b>Proses Pemesanan:</b> Proses pemesanan sangat mudah dan cepat! Cukup hubungi kami dan tim kami akan membantu Anda mengatur semua kebutuhan tiket Anda.</p>' +
+                      '<p><b>Keuntungan Menggunakan Layanan Kami:</b></p>' +
+                      '<ul>' +
+                      '<li>Diskon khusus untuk kelompok atau paket keluarga</li>' +
+                      '<li>Pilihan pembayaran yang fleksibel</li>' +
+                      '<li>Konfirmasi pemesanan instan dan dukungan pelanggan 24/7</li>' +
+                      '</ul>';
+            break;
+  
+          case 4:
+            title = 'Informasi Wisata';
+            content = '<h5>Informasi Wisata</h5>' +
+                      '<p>Temukan pesona Sulawesi Selatan dengan berbagai tempat wisata menarik yang menawarkan pengalaman tak terlupakan:</p>' +
+                      '<ul>' +
+                      '<li><b>Pantai Losari:</b> Ikon kota Makassar, terkenal dengan pemandangan matahari terbenam yang indah.</li>' +
+                      '<li><b>Taman Nasional Bantimurung:</b> Surga bagi penggemar alam, dengan air terjun yang memukau dan habitat kupu-kupu yang langka.</li>' +
+                      '<li><b>Museum La Galigo:</b> Menyimpan berbagai artefak budaya dan sejarah Sulawesi Selatan.</li>' +
+                      '</ul>' +
+                      '<h6>Aktivitas yang Tersedia:</h6>' +
+                      '<ul>' +
+                      '<li>Trekking di Taman Nasional</li>' +
+                      '<li>Snorkeling di Pantai Tanjung Bira</li>' +
+                      '<li>Menikmati kuliner khas Makassar seperti Coto Makassar dan Pisang Epe</li>' +
+                      '</ul>' +
+                      '<h6>Tips Perjalanan:</h6>' +
+                      '<ul>' +
+                      '<li>Waktu terbaik untuk mengunjungi adalah antara April hingga September.</li>' +
+                      '<li>Jangan ragu untuk mencoba bahasa lokal, meskipun banyak yang berbahasa Inggris.</li>' +
+                      '</ul>';
+            break;
+  
+          default:
+            title = 'Detail Layanan';
+            content = 'Informasi lebih lanjut tentang layanan ini akan segera tersedia.';
+            break;
+        }
+  
+        setModalContent(title, content);
+  
+        // Adding event listeners for each tour package option
+        document.getElementById('paketSehari')?.addEventListener('click', (event) => {
+          event.preventDefault();
+          setModalContent('Paket Wisata Sehari Penuh', 
+            '<p>Detail tentang Paket Wisata Sehari Penuh:</p>' +
+            '<p> jadwal perjalanan </p>' +
+            '<ul>' +
+            '<li>Pagi: Sarapan di restoran lokal.</li>' +
+            '<li>Pagi hingga Siang: Kunjungan ke Taman Nasional Bantimurung.</li>' +
+            '<li>Siang: Makan siang di restoran dengan pemandangan indah.</li>' +
+            '<li>Sore: Mengunjungi Pantai Losari untuk menikmati sunset.</li>' +
+            '<li><a href="http://localhost/WEB%20TEMPAT%20WISATA/add.php" id="pesan"><button type="button">Pesan</button></a></li>' +
+            '</ul>' +
+            '<p><b>Harga:</b> Rp 500.000/orang</p>');
+        });
+  
+        document.getElementById('paketKeluarga')?.addEventListener('click', (event) => {
+          event.preventDefault();
+          setModalContent('Paket Wisata Keluarga', 
+            '<p>Detail tentang Paket Wisata Keluarga:</p>' +
+            '<p>jadwal perjalanan</p>' +
+            '<ul>' +
+            '<li>Pagi: Kunjungan ke Kebun Binatang Makassar.</li>' +
+            '<li>Siang: Aktivitas di Pantai Tanjung Bira, termasuk snorkeling.</li>' +
+            '<li>Malam: Makan malam keluarga di restoran lokal.</li>' +
+            '<li><a href="http://localhost/WEB%20TEMPAT%20WISATA/add.php" id="pesan"><button type="button">Pesan</button></a></li>' +
+            '</ul>' +
+            '<p><b>Harga:</b> Rp 1.500.000/keluarga (maksimal 4 orang)</p>');
+        });
+  
+        document.getElementById('paketBudaya')?.addEventListener('click', (event) => {
+          event.preventDefault();
+          setModalContent('Paket Wisata Khusus Budaya', 
+            '<p>Detail tentang Paket Wisata Khusus Budaya:</p>' +
+            '<p>jadwal perjalanan</p>' +
+            '<ul>' +
+            '<li>Pagi: Kunjungan ke Museum La Galigo.</li>' +
+            '<li>Siang: Partisipasi dalam acara tradisional di Desa Adat.</li>' +
+            '<li>Sore: Kelas memasak masakan khas Sulawesi.</li>' +
+            '<li><a href="http://localhost/WEB%20TEMPAT%20WISATA/add.php" id="pesan"><button type="button">Pesan</button></a></li>' +
+            '</ul>' +
+            '<p><b>Harga:</b> Rp 500.000/orang</p>');
+        });
+      });
+    });
+</script>
+
+<footer class="bg-dark text-white text-center pt-4 pb-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-2 mx-auto">
+                <h5 class="text-uppercase">Hubungi Kami</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt"></i> Makassar, Sulawesi Selatan</li>
+                    <li><i class="bi bi-envelope"></i> info@Jelajahisulsel.com</li>
+                    <li><i class="bi bi-telephone"></i> +62 821-9968-2968</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-dark pt-1">
+            <p class="mb-0">© 2024 Jelajahi Sulawesi Selatan. Hak cipta dilindungi.</p>
+        </div>
+    </div>
+</footer>
+  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
